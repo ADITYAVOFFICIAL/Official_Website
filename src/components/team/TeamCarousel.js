@@ -7,7 +7,10 @@ import Orientation1 from "../../assets/Events/or1.jpg"
 import Core from "../../assets/Events/core.jpg"
 import YouTube from "react-youtube";
 import "./teamslide.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faGitSquare, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+import { faPeopleArrows } from "@fortawesome/free-solid-svg-icons/faPeopleArrows";
 
 function TeamCarousel() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -38,13 +41,13 @@ function TeamCarousel() {
             <Carousel.Item>
                 <img src={Gitsession} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
-                  <h5 className="eventname">Git & GitHub session</h5>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faGitSquare} style={{ marginRight: "4px" }} />Git & <FontAwesomeIcon icon={faGithub} style={{ marginRight: "2px" }} />GitHub session</h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <img src={Orientation1} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
-                  <h5 className="eventname">Orientation '24</h5>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faPeopleArrows} style={{ marginRight: "4px" }} />Orientation '24</h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -62,7 +65,7 @@ function TeamCarousel() {
               <Carousel.Item>
                 <img src={Core} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
-                  <h5 className="eventname">Founding Team 2024</h5>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faPeopleGroup} style={{ marginRight: "4px" }} />Founding Team 2024</h5>
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
