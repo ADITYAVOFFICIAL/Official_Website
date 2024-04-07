@@ -2,9 +2,9 @@ import React, { useState, useRef } from "react";
 import { Carousel } from "react-bootstrap";
 // eslint-disable-next-line
 import Sample from "../../assets/Events/sample.png"
+import Gitsession from "../../assets/Events/gitgithub.png"
 import Orientation1 from "../../assets/Events/or1.jpg"
 import Core from "../../assets/Events/core.jpg"
-import Orientation2 from "../../assets/Events/or3.jpg"
 import YouTube from "react-youtube";
 import "./teamslide.css";
 
@@ -35,20 +35,14 @@ function TeamCarousel() {
                 </span>{" "}
               </h1>
             <Carousel fade slide className="carousel-glow" interval={null}>
-              <Carousel.Item>
-                <img src={Core} className="d-block w-100 mobile-image" alt="Coming Soon"/>
+            <Carousel.Item>
+                <img src={Gitsession} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
-                  <h5 className="eventname">Founding Team 2024</h5>
+                  <h5 className="eventname">Git & GitHub session</h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <img src={Orientation1} className="d-block w-100 mobile-image" alt="Coming Soon"/>
-                <Carousel.Caption>
-                  <h5 className="eventname">Orientation '24</h5>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={Orientation2} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
                   <h5 className="eventname">Orientation '24</h5>
                 </Carousel.Caption>
@@ -64,6 +58,12 @@ function TeamCarousel() {
                     }}
                   />
                 </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={Core} className="d-block w-100 mobile-image" alt="Coming Soon"/>
+                <Carousel.Caption>
+                  <h5 className="eventname">Founding Team 2024</h5>
+                </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
           </div>
