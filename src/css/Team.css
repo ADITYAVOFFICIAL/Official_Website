@@ -31,6 +31,7 @@
 }
 .nav-tabs {
   border-bottom: 1px !important;
+  animation: blurFadeUpp 1s ease-out forwards;
 }
 .nav-tabs > .nav-item {
   margin: 1vh;
