@@ -5,10 +5,11 @@ import Sample from "../../assets/Events/sample.png"
 import Gitsession from "../../assets/Events/gitgithub.png"
 import Orientation1 from "../../assets/Events/or1.jpg"
 import Core from "../../assets/Events/core.jpg"
+import HTMLCSS from "../../assets/Events/htmlcss.jpeg"
 import YouTube from "react-youtube";
 import "./teamslide.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faCss3, faGitSquare, faGithub, faHtml5, faReact } from "@fortawesome/free-brands-svg-icons";
+import {faCss3, faGitSquare, faGithub, faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleArrows } from "@fortawesome/free-solid-svg-icons/faPeopleArrows";
 
@@ -39,9 +40,9 @@ function TeamCarousel() {
               </h1>
             <Carousel fade slide className="carousel-glow" interval={null}>
             <Carousel.Item>
-                <img src={Sample} className="d-block w-100 mobile-image" alt="Coming Soon"/>
+                <img src={HTMLCSS} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
-                  <h5 className="eventname"><FontAwesomeIcon icon={faHtml5} style={{ marginRight: "3px" }} />HTML5 <FontAwesomeIcon icon={faCss3} style={{ marginRight: "2px" }} />CSS3 session & <FontAwesomeIcon icon={faReact} style={{ marginRight: "4px" }} />React Theory</h5>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faHtml5} style={{ marginRight: "3px" }} />HTML5 <FontAwesomeIcon icon={faCss3} style={{ marginRight: "2px" }} />CSS3 session</h5>
                 </Carousel.Caption>
               </Carousel.Item>
             <Carousel.Item>
