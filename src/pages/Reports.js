@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Team.css";
+import "../css/Reports.css";
 import RepCard from "../components/reports/RepCard";
 import Tab from "../components/team/tabbar/Tab";
 import TabContent from "../components/team/tabbar/TabContent";
@@ -8,7 +8,7 @@ function Reports() {
   return (
     <>
       <div className="gbc1"></div>
-      <ul className="nav nav-tabs justify-content-center" role="tablist"  style={{marginTop:"130px"}}>
+      <ul className="nav nav-tabs justify-content-center" role="tablist"  style={{marginTop:"150px"}}>
         <Tab
           className="nav-link tab-btn active"
           id="year2023-tab"
