@@ -99,13 +99,13 @@ function Footer() {
                       <>
                         <h4 className="footer-section-title" style={{fontSize:"20px",marginTop:"25px"}}>Weather @SRMIST KTR</h4>
                         <li className="list-item" style={{fontWeight:"500"}}>
-                          <i className="bi bi-thermometer-half" style={{marginRight:"5px"}}></i> Temperature: {weatherData.temp_c}°C
+                          <i className="bi bi-thermometer-half" style={{marginRight:"10px"}}></i> Temperature: {weatherData.temp_c}°C
                         </li>
                         <li className="list-item" style={{fontWeight:"500"}}>
-                          <i className="bi bi-cloud" style={{marginRight:"5px"}}></i> Condition: {weatherData.condition.text}
+                          <i className="bi bi-cloud" style={{marginRight:"10px"}}></i> Condition: {weatherData.condition.text}
                         </li>
                         <li className="list-item" style={{fontWeight:"500"}}>
-                          <i className="bi bi-wind" style={{marginRight:"5px"}}></i> Wind: {weatherData.wind_kph} kph
+                          <i className="bi bi-wind" style={{marginRight:"10px"}}></i> Wind: {weatherData.wind_kph} kph
                         </li>
                       </>
                     )}
