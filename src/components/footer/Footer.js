@@ -29,7 +29,7 @@ function Footer() {
           "https://api.weatherapi.com/v1/current.json",
           {
             params: {
-              key: "62e57e0e765c410daaa81605242507",
+              key: process.env.WEATHER_API_KEY,
               q: "Chengalpattu"
             }
           }
