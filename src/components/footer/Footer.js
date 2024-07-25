@@ -29,7 +29,7 @@ function Footer() {
           "https://api.weatherapi.com/v1/current.json",
           {
             params: {
-              key: process.env.WEATHER_API_KEY,
+              key: "62e57e0e765c410daaa81605242507",
               q: "Chengalpattu"
             }
           }
@@ -97,17 +97,15 @@ function Footer() {
                     </li>
                     {weatherData && (
                       <>
-                        <li className="list-item">
-                          <i className="bi bi-thermometer-half"></i> Temperature: {weatherData.temp_c}°C
+                        <h4 className="footer-section-title" style={{fontSize:"20px",marginTop:"25px"}}>Weather @SRMIST KTR</h4>
+                        <li className="list-item" style={{fontWeight:"500"}}>
+                          <i className="bi bi-thermometer-half" style={{marginRight:"5px"}}></i> Temperature: {weatherData.temp_c}°C
                         </li>
-                        <li className="list-item">
-                          <i className="bi bi-emoji-sunglasses"></i> Feels Like: {weatherData.feelslike_c}°C
+                        <li className="list-item" style={{fontWeight:"500"}}>
+                          <i className="bi bi-cloud" style={{marginRight:"5px"}}></i> Condition: {weatherData.condition.text}
                         </li>
-                        <li className="list-item">
-                          <i className="bi bi-cloud"></i> Condition: {weatherData.condition.text}
-                        </li>
-                        <li className="list-item">
-                          <i className="bi bi-wind"></i> Wind: {weatherData.wind_kph} kph
+                        <li className="list-item" style={{fontWeight:"500"}}>
+                          <i className="bi bi-wind" style={{marginRight:"5px"}}></i> Wind: {weatherData.wind_kph} kph
                         </li>
                       </>
                     )}
@@ -127,7 +125,7 @@ function Footer() {
                 </div>
               </div>
               <div className="copyright text-center">
-                <p style={{ color: "white", fontWeight: "bold", marginRight: isMobile ? "0px" : "170px" }}>
+                <p style={{ color: "white", fontWeight: "bold", marginRight: isMobile ? "0px" : "170px",marginTop:"-80px" }}>
                   &copy; {isMobile ? "2024" : "2024 Made with ❤️ by"}
                   <NavLink to="#"> SIGKDD Student Chapter SRM KTR </NavLink>
                 </p>
