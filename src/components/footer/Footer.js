@@ -29,7 +29,7 @@ function Footer() {
           "https://api.weatherapi.com/v1/current.json",
           {
             params: {
-              key: "62e57e0e765c410daaa81605242507",
+              key: process.env.REACT_APP_WEATHER_API_KEY,
               q: "Chengalpattu"
             }
           }
@@ -86,13 +86,13 @@ function Footer() {
                   <ul className="contact-list list-unstyled">
                     <li className="list-item">
                       <i className="bi bi-envelope"></i>
-                      <a href="mailto:srmsigkdd@gmail.com">
+                      <a style={{fontWeight:"500",fontSize:"18px"}} href="mailto:srmsigkdd@gmail.com">
                         srmsigkdd@gmail.com
                       </a>
                     </li>
                     <li className="list-item">
                       <i className="bi bi-geo-alt-fill"></i>
-                      <a href="https://www.google.com/maps/place/SRM+University,+Kattankulathur,+Tamil+Nadu+603203/@12.8194041,80.0367139,17z/data=!3m1!4b1!4m6!3m5!1s0x3a52f76c4db87a47:0x341fa471f8027d68!8m2!3d12.8193124!4d80.0393459!16s%2Fg%2F11f7b3plgj?entry=ttu">UB, SRM Institute of Science and Technology, Kattankulkathur, Chennai [603203]
+                      <a style={{fontWeight:"500",fontSize:"18px"}} href="https://www.google.com/maps/place/SRM+University,+Kattankulathur,+Tamil+Nadu+603203/@12.8194041,80.0367139,17z/data=!3m1!4b1!4m6!3m5!1s0x3a52f76c4db87a47:0x341fa471f8027d68!8m2!3d12.8193124!4d80.0393459!16s%2Fg%2F11f7b3plgj?entry=ttu">UB, SRM Institute of Science and Technology, Kattankulkathur, Chennai [603203]
                       </a>
                     </li>
                     {weatherData && (
