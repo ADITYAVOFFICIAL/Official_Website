@@ -23,6 +23,7 @@ import Vishal from "../assets/Developers/vishal.png";
 import Ansh from "../assets/CoreMembers/ansh.png";
 import Gupta from "../assets/Developers/gupta.png";
 import Srijita from "../assets/CoreMembers/srijita.jpeg";
+import Mann from "../assets/CoreMembers/mann.jpeg";
 // eslint-disable-next-line
 import Samplee from "../assets/CoreMembers/Samplee.png";
 
@@ -219,13 +220,13 @@ function Team() {
                           linkedinUrl="https://www.linkedin.com/in/dheeraj-sharma-97251120b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                           githubUrl="https://github.com/dheeraj5988"
                         />
-                        {/* <ProfileCard
-                          img={Sample}
-                          name="Lead Name"
+                        <ProfileCard
+                          img={Mann}
+                          name="Mann Kumar Attri"
                           role="Creatives Lead"
-                          linkedinUrl="https://www.linkedin.com/in/"
-                          githubUrl="https://github.com/"
-                        /> */}
+                          linkedinUrl="https://www.linkedin.com/in/mann-attri-32757329b"
+                          githubUrl="https://github.com/mannchaudhary"
+                        />
                       </>
                     }
                   />
